@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Food Delivery Menu & Order Form</h1>
+    <table>
+        <caption>Today's Specials</caption>
+        <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Margherita Pizza</td>
+                <td>Classic pizza with tomatoes, mozzarella, and basil</td>
+                <td>$12.00</td>
+            </tr>
+            <tr>
+                <td>Cheeseburger</td>
+                <td>Beef patty with cheddar, lettuce, and tomato on a sesame bun</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Spaghetti Carbonara</td>
+                <td>Spaghetti with eggs, pancetta, and Parmesan</td>
+                <td>$14.00</td>
+            </tr>
+            <tr>
+                <td>Caesar Salad</td>
+                <td>Crisp romaine, Caesar dressing, croutons, and Parmesan</td>
+                <td>$9.00</td>
+            </tr>
+            <tr>
+                <td>Grilled Salmon</td>
+                <td>Fresh salmon fillet grilled to perfection</td>
+                <td>$18.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="#" method="post">
+        <h2>Place Your Order</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="food-items">Select Your Dish(es):</label>
+        <input type="checkbox" id="pizza" name="food-item" value="Margherita Pizza">
+        <label for="pizza">Margherita Pizza</label><br>
+
+        <input type="checkbox" id="burger" name="food-item" value="Cheeseburger">
+        <label for="burger">Cheeseburger</label><br>
+
+        <input type="checkbox" id="spaghetti" name="food-item" value="Spaghetti Carbonara">
+        <label for="spaghetti">Spaghetti Carbonara</label><br>
+
+        <input type="checkbox" id="salad" name="food-item" value="Caesar Salad">
+        <label for="salad">Caesar Salad</label><br>
+
+        <input type="checkbox" id="salmon" name="food-item" value="Grilled Salmon">
+        <label for="salmon">Grilled Salmon</label><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity">
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+</body>
+</html>
